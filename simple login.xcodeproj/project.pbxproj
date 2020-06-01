@@ -13,6 +13,7 @@
 		833181412483EA8F00CA0C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833181402483EA8F00CA0C93 /* Assets.xcassets */; };
 		833181442483EA8F00CA0C93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833181432483EA8F00CA0C93 /* Preview Assets.xcassets */; };
 		833181472483EA8F00CA0C93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833181452483EA8F00CA0C93 /* LaunchScreen.storyboard */; };
+		834740FC2484A9E100D6B826 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 834740FB2484A9E100D6B826 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		833181432483EA8F00CA0C93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		833181462483EA8F00CA0C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		833181482483EA8F00CA0C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834740FB2484A9E100D6B826 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +58,10 @@
 		833181392483EA8D00CA0C93 /* simple login */ = {
 			isa = PBXGroup;
 			children = (
-				8331813A2483EA8D00CA0C93 /* AppDelegate.swift */,
-				8331813C2483EA8D00CA0C93 /* SceneDelegate.swift */,
-				8331813E2483EA8D00CA0C93 /* ContentView.swift */,
-				833181402483EA8F00CA0C93 /* Assets.xcassets */,
-				833181452483EA8F00CA0C93 /* LaunchScreen.storyboard */,
+				834740FB2484A9E100D6B826 /* GoogleService-Info.plist */,
+				834740FA2484A9AF00D6B826 /* Resource */,
+				834740F92484A9A500D6B826 /* Views */,
+				834740F82484A99A00D6B826 /* App */,
 				833181482483EA8F00CA0C93 /* Info.plist */,
 				833181422483EA8F00CA0C93 /* Preview Content */,
 			);
@@ -73,6 +74,32 @@
 				833181432483EA8F00CA0C93 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		834740F82484A99A00D6B826 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8331813A2483EA8D00CA0C93 /* AppDelegate.swift */,
+				8331813C2483EA8D00CA0C93 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		834740F92484A9A500D6B826 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				833181452483EA8F00CA0C93 /* LaunchScreen.storyboard */,
+				8331813E2483EA8D00CA0C93 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		834740FA2484A9AF00D6B826 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				833181402483EA8F00CA0C93 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				833181472483EA8F00CA0C93 /* LaunchScreen.storyboard in Resources */,
+				834740FC2484A9E100D6B826 /* GoogleService-Info.plist in Resources */,
 				833181442483EA8F00CA0C93 /* Preview Assets.xcassets in Resources */,
 				833181412483EA8F00CA0C93 /* Assets.xcassets in Resources */,
 			);
