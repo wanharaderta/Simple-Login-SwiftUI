@@ -16,74 +16,76 @@ struct LoginView: View {
     var body: some View {
         ZStack {
             
-            Color("Color").edgesIgnoringSafeArea(.all)
+            Color.orange.opacity(0.10).edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 0) {
                 Image("rachid-oucharia-2d1-OSHkHXM-unsplash")
                     .resizable()
-                    .frame(height: UIScreen.main.bounds.height / 3)
                 
-                VStack {
-                    HStack{
-                        Text("Sign In").fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom],20)
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text("Username").font(.headline).fontWeight(.light).foregroundColor(Color.init(.label).opacity(0.75))
+                ZStack(alignment:.topLeading){
+                    VStack {
                         HStack{
-                            TextField("Enter Your Username", text: $user)
+                            Text("Sign In").fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom],20)
                         }
                         
-                        Divider()
-                    }.padding(.bottom, 15)
-                    
-                    VStack(alignment: .leading) {
-                        Text("Password").font(.headline).fontWeight(.light).foregroundColor(Color.init(.label).opacity(0.75))
-                        HStack{
-                            SecureField("Enter Your Password", text: $pass)
+                        VStack(alignment: .leading) {
+                            Text("Username").font(.headline).fontWeight(.light).foregroundColor(Color.init(.label).opacity(0.75))
+                            HStack{
+                                TextField("Enter Your Username", text: $user)
+                            }
+                            
+                            Divider()
+                        }.padding(.bottom, 15)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Password").font(.headline).fontWeight(.light).foregroundColor(Color.init(.label).opacity(0.75))
+                            HStack{
+                                SecureField("Enter Your Password", text: $pass)
+                            }
+                            
+                            Divider()
                         }
                         
-                        Divider()
-                    }
-                    
-                    Button(action: {
-                        //action
-                    }){
-                        Text("Sign In").foregroundColor(.white).frame(width: UIScreen.main.bounds.width - 120).padding()
-                    }.background(Color.orange)
-                        .clipShape(Capsule())
-                        .padding(.top, 45)
-                    
-                    VStack{
+                        Button(action: {
+                            //action
+                        }){
+                            Text("Sign In").foregroundColor(.white).frame(width: UIScreen.main.bounds.width - 120).padding()
+                        }.background(Color.orange)
+                            .clipShape(Capsule())
+                            .padding(.top, 45)
                         
-                        Text("(or)").foregroundColor(Color.gray.opacity(0.5)).padding(.top,30)
-                        
-                        GoogleSignView().frame(width: 150, height: 55)
-                        
-                        HStack(spacing: 8){
+                        VStack{
                             
-                            Text("Don't Have An Account ?").foregroundColor(Color.gray.opacity(0.5))
+                            Text("(or)").foregroundColor(Color.gray.opacity(0.5)).padding(.top,30)
                             
-                            Button(action: {
-                                
-                                self.show.toggle()
-                                
-                            }) {
-                                
-                                Text("Sign Up")
-                                
-                            }.foregroundColor(.blue)
+                            GoogleSignView().frame(width: 100, height: 55)
                             
-                        }.padding(.top, 25)
+                            HStack(spacing: 8){
+                                Text("Don't Have An Account ?").foregroundColor(Color.black.opacity(0.5))
+                                
+                                Button(action: {
+                                    //action
+                                }) {
+                                    Text("Sign Up")
+                                }.foregroundColor(.blue)
+                                
+                            }.padding(.top, 25)
+                            
+                        }
                         
                     }
-                }.padding(.horizontal, 30)
+                    .padding(.horizontal, 30)
+                    
+                    .background(CustomShape().fill(Color.white))
+                    .clipShape(Corners())
+                    
+                }.offset(y: -40)
                 Spacer()
             }
-                
-                
-            .edgesIgnoringSafeArea(.top)
-        }
+            
+            
+        }.edgesIgnoringSafeArea(.top)
+            .animation(.default)
         
     }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		834740FC2484A9E100D6B826 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 834740FB2484A9E100D6B826 /* GoogleService-Info.plist */; };
 		834740FF2484ABCD00D6B826 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834740FE2484ABCD00D6B826 /* LoginView.swift */; };
 		834741012484B37200D6B826 /* GoogleSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834741002484B37200D6B826 /* GoogleSignView.swift */; };
+		834741042484B69000D6B826 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834741032484B69000D6B826 /* CustomShape.swift */; };
+		834741062484B6CC00D6B826 /* Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834741052484B6CC00D6B826 /* Corners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		834740FB2484A9E100D6B826 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		834740FE2484ABCD00D6B826 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		834741002484B37200D6B826 /* GoogleSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignView.swift; sourceTree = "<group>"; };
+		834741032484B69000D6B826 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		834741052484B6CC00D6B826 /* Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corners.swift; sourceTree = "<group>"; };
 		C43C5C9FAEDA165E3467CED2 /* Pods_simple_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simple_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,7 +58,6 @@
 				716CF2EBCD904DBAFEE1D270 /* Pods-simple login.debug.xcconfig */,
 				4F8D87D139FB04FAE0CC3988 /* Pods-simple login.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -117,6 +120,7 @@
 		834740F92484A9A500D6B826 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				834741022484B68400D6B826 /* Utils */,
 				834740FD2484ABBA00D6B826 /* Login */,
 				833181452483EA8F00CA0C93 /* LaunchScreen.storyboard */,
 				8331813E2483EA8D00CA0C93 /* ContentView.swift */,
@@ -139,6 +143,15 @@
 				834741002484B37200D6B826 /* GoogleSignView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		834741022484B68400D6B826 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				834741032484B69000D6B826 /* CustomShape.swift */,
+				834741052484B6CC00D6B826 /* Corners.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +290,8 @@
 			files = (
 				8331813B2483EA8D00CA0C93 /* AppDelegate.swift in Sources */,
 				834741012484B37200D6B826 /* GoogleSignView.swift in Sources */,
+				834741042484B69000D6B826 /* CustomShape.swift in Sources */,
+				834741062484B6CC00D6B826 /* Corners.swift in Sources */,
 				8331813D2483EA8D00CA0C93 /* SceneDelegate.swift in Sources */,
 				834740FF2484ABCD00D6B826 /* LoginView.swift in Sources */,
 				8331813F2483EA8D00CA0C93 /* ContentView.swift in Sources */,
