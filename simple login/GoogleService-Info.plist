@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>50196508810-u1jtij03ef78jipcm7je0t0g8t67stb1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.50196508810-u1jtij03ef78jipcm7je0t0g8t67stb1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCApQo952L-COvXuugz_Y1cexn5mdSS0Hw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>50196508810</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.takalar.simple-login</string>
+	<key>PROJECT_ID</key>
+	<string>login-swiftui-3000d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>login-swiftui-3000d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:50196508810:ios:f8f372fccd75bf2f29bd73</string>
+	<key>DATABASE_URL</key>
+	<string>https://login-swiftui-3000d.firebaseio.com</string>
+</dict>
+</plist>
